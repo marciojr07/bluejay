@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve Pizzaria - Painel Principal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('http://localhost/PIZZARIA.COM11/img/779.avif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: orange;
+            color: rgb(0, 0, 0);
+            height: 150px;
+            position: relative;
+        }
+
+        .header-title {
+            border: 2px solid #000;
+            border-radius: 10px;
+            background-color: rgba(151, 116, 46, 0.8);
+            text-align: center;
+            margin: 10px 0;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        #brand-logo {
+            max-width: 100px;
+            height: auto;
+            display: inline;
+            margin: 0;
+            vertical-align: middle;
+        }
+
+        .grafite {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 36px;
+            color: #4B4B4B;
+            position: absolute;
+            top: 25px;
+            left: 75%;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            width: 200%;
+        }
+
+        .card {
+            background-color: rgba(151, 116, 46, 0.8);
+            border-radius: 10px;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h3 {
+            color: rgb(0, 0, 0);
+            margin-bottom: 15px;
+        }
+
+    
+
+        .card1:hover {
+            transform: scale(1.05);
+        }
+
+    
+
+        .card-btn {
+            background-color: orange;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .card-btn:hover {
+            background-color: darkorange;
+            color: white;
+        }
+        
+        .card-btn:hover {
+            background-color: darkorange;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: orange;
+            color: rgb(0, 0, 0);
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="grafite"><strong>Steve Pizzaria</strong></div>
+        <nav class="navbar navbar-expand-lg">
+            <a href="#" class="navbar-brand">
+                <img src="http://localhost/PIZZARIA.COM11/img/78.svg" alt="PIZZARIABLUE" id="brand-logo">
+            </a>
+            <div class="header-title">
+                <a href="http://localhost/PIZZARIA.COM11/process/login.html" class="btn card-btn">
+                    <h1 class="fas fa-clipboard-list"></h1> Painel de Controle
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="card-container">
+            <div class="card">
+                <h3>Fazer Pedido</h3>
+                <p>Monte sua pizza do jeito que você gosta!</p>
+                <a href="process/index.html" class="btn card-btn">
+                    <i class="fas fa-pizza-slice"></i> Ir para Pedidos
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Novos Cliente</h3>
+                <p>Cadastre-se para fazer seus pedidos</p>
+                <a href="process/cadastro.html" class="btn card-btn">
+                    <i class="fas fa-user-plus"></i> Fazer Cadastro
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Steve Pizzaria. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
